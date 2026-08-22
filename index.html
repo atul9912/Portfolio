@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atul Kumar — Data Analyst & Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><span class="dot"></span>atul<span style="color:var(--ink-faint)">.kumar</span></div>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">about</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#certifications">certs</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">portfolio.init()</div>
+      <h1>Atul Kumar builds meaning out of <em>data</em> &amp; <em>interfaces</em>.</h1>
+
+      <div class="role-toggle" role="tablist" aria-label="Choose focus area">
+        <button class="active" data-role="analyst" role="tab" aria-selected="true">Data Analyst</button>
+        <button data-role="dev" role="tab" aria-selected="false">Web Developer</button>
+      </div>
+
+      <p class="hero-sub" id="heroSub">
+        <span class="k">B.Tech CSE</span> student at Roorkee Institute of Technology who turns raw datasets into
+        <span class="k">clean pipelines, EDA, and dashboards</span> people actually use — from Python/SQL analysis to Power BI storytelling.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View projects →</a>
+        <a href="mailto:atulkumr9212@gmail.com" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="df-panel">
+      <div class="df-dots"><span></span><span></span><span></span></div>
+      <div class="df-title"><span class="fn">atul</span>.head()</div>
+      <table class="df">
+        <thead><tr><th>#</th><th>field</th><th>value</th></tr></thead>
+        <tbody>
+          <tr><td class="idx" style="animation-delay:.05s">0</td><td style="animation-delay:.05s">name</td><td class="val" style="animation-delay:.05s">Atul Kumar</td></tr>
+          <tr><td class="idx" style="animation-delay:.15s">1</td><td style="animation-delay:.15s">role</td><td class="val" style="animation-delay:.15s">Data Analyst · Web Dev</td></tr>
+          <tr><td class="idx" style="animation-delay:.25s">2</td><td style="animation-delay:.25s">college</td><td class="val" style="animation-delay:.25s">RIT, Roorkee</td></tr>
+          <tr><td class="idx" style="animation-delay:.35s">3</td><td style="animation-delay:.35s">cgpa</td><td class="val" style="animation-delay:.35s">7.00 / 10</td></tr>
+          <tr><td class="idx" style="animation-delay:.45s">4</td><td style="animation-delay:.45s">stack</td><td class="val" style="animation-delay:.45s">Python · SQL · JS</td></tr>
+        </tbody>
+      </table>
+      <div class="df-foot">[5 rows x 3 columns] &nbsp;·&nbsp; dtype: object</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="eyebrow">about</div>
+      <h2 class="section-title">Where analysis meets interface</h2>
+      <div class="about-text">
+        <p>I'm a first-year <strong>B.Tech Computer Science &amp; Engineering</strong> student at Roorkee Institute of Technology, working at the intersection of <strong>data analytics</strong> and <strong>web development</strong>. I like the moment a messy CSV turns into a clean story — and the moment that story becomes something people can click through.</p>
+        <p>On the analytics side, I clean and explore data with <strong>Pandas, NumPy, and Seaborn</strong>, write the SQL to back it up, and package findings into <strong>Power BI dashboards</strong>. On the development side, I build with <strong>HTML, CSS, and JavaScript</strong>, connecting front-end interfaces to real databases.</p>
+        <p>Recent work spans a hackathon platform for Indian art, an end-to-end e-commerce analytics pipeline, a healthcare analytics system with ML-based readmission prediction, and a conversational AI assistant built on IBM Watson.</p>
+      </div>
+    </div>
+
+    <div class="info-card reveal">
+      <div class="cls">&lt;class 'Portfolio.Atul'&gt;</div>
+      <div class="idx-line">RangeIndex: 1 entries, 0 to 0</div>
+      <div class="info-row"><span class="n">0</span><span class="col">role</span><span class="v">Data Analyst / Web Developer</span></div>
+      <div class="info-row"><span class="n">1</span><span class="col">education</span><span class="v">B.Tech CSE, RIT Roorkee</span></div>
+      <div class="info-row"><span class="n">2</span><span class="col">cgpa</span><span class="v">7.00 / 10 (Year 1)</span></div>
+      <div class="info-row"><span class="n">3</span><span class="col">focus</span><span class="v">Analytics · ML · Web</span></div>
+      <div class="info-row"><span class="n">4</span><span class="col">based_in</span><span class="v">Roorkee, India</span></div>
+      <div class="info-row"><span class="n">5</span><span class="col">email</span><span class="v">atulkumr9212@gmail.com</span></div>
+      <div class="info-foot">dtypes: object(6) &nbsp;·&nbsp; memory usage: 208.0+ bytes</div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow">education</div>
+    <h2 class="section-title reveal">Academic record</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="stat">7.00<span>/10 CGPA</span></div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p>Roorkee Institute of Technology, Roorkee — First Year</p>
+        <span class="tag">in progress</span>
+      </div>
+      <div class="edu-card reveal">
+        <div class="stat">69<span>% · Class XII</span></div>
+        <h3>Higher Secondary Education</h3>
+        <p>Oriental College, +2</p>
+        <span class="tag">completed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">skills</div>
+    <h2 class="section-title reveal">Toolkit</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="col-label">languages</div>
+        <h3>Programming</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">Java</span><span class="chip">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="col-label">analytics</div>
+        <h3>Data Analytics</h3>
+        <div class="chip-row">
+          <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">EDA</span><span class="chip">Data Cleaning</span><span class="chip">Data Visualization</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="col-label">platforms</div>
+        <h3>Tools &amp; Platforms</h3>
+        <div class="chip-row">
+          <span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">GitHub</span><span class="chip">IBM Watson Assistant</span><span class="chip">Jupyter Notebook</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="col-label">frontend</div>
+        <h3>Web Development</h3>
+        <div class="chip-row">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">DOM Manipulation</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="col-label">spreadsheets</div>
+        <h3>Microsoft Excel</h3>
+        <div class="chip-row">
+          <span class="chip">Pivot Tables</span><span class="chip">VLOOKUP</span><span class="chip">XLOOKUP</span><span class="chip">Conditional Formatting</span><span class="chip">Charts &amp; Dashboards</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="col-label">data layer</div>
+        <h3>Database</h3>
+        <div class="chip-row">
+          <span class="chip">SQL</span><span class="chip">CRUD Operations</span><span class="chip">Relational DB</span><span class="chip">DB Integration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow">experience</div>
+    <h2 class="section-title reveal">Internships &amp; certifications in practice</h2>
+    <div class="exp-list">
+      <div class="exp-card reveal">
+        <div class="exp-date">SUMMER 2024</div>
+        <div>
+          <h3>Summer Internship — Java with Database Integration</h3>
+          <div class="exp-stack">Java · Core SQL · Relational Database Management</div>
+          <p>Designed and implemented Java-based applications integrated with relational databases using core SQL operations.</p>
+          <ul>
+            <li>Hands-on with CRUD operations and database schema design</li>
+            <li>Worked across relational database systems and query optimization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-date">IBM SKILLSBUILD</div>
+        <div>
+          <h3>Data Analysis with Python</h3>
+          <div class="exp-stack">Python · Data Manipulation · Visualization</div>
+          <p>Completed IBM's certification program, building foundational skills in Python-based data analysis — manipulating, exploring, and visualizing real-world datasets to derive meaningful insights.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">projects</div>
+    <h2 class="section-title reveal">Featured work</h2>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal">
+        <div class="cell-head"><span>In [1]:</span><span class="out">Out[1]: ✓ deployed</span></div>
+        <div class="proj-body">
+          <h3>Healthcare Analytics</h3>
+          <p>AI-powered analytics platform built on 50K+ synthetic patient records — data engineering, SQL analytics, interactive dashboards, and an ML-based readmission prediction model.</p>
+          <div class="proj-tags"><span>Flask</span><span>SQLite</span><span>Chart.js</span><span>LightGBM</span></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="cell-head"><span>In [2]:</span><span class="out">Out[2]: ✓ deployed</span></div>
+        <div class="proj-body">
+          <h3>E-Commerce Analytics</h3>
+          <p>End-to-end analytics project covering data cleaning, outlier detection, sales and customer analysis, Python-based EDA, MySQL integration, and an interactive Power BI dashboard.</p>
+          <div class="proj-tags"><span>Python</span><span>MySQL</span><span>XGBoost</span><span>Power BI</span></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="cell-head"><span>In [3]:</span><span class="out">Out[3]: hackathon build</span></div>
+        <div class="proj-body">
+          <h3>Arts Kala Sangam</h3>
+          <p>A web platform built during a hackathon to promote traditional Indian arts and crafts, connecting artists with a wider digital audience.</p>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>Hackathon</span></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="cell-head"><span>In [4]:</span><span class="out">Out[4]: ✓ deployed</span></div>
+        <div class="proj-body">
+          <h3>SpiceStreet</h3>
+          <p>A modern Indian street-food ordering website with a responsive UI, food browsing, a smooth ordering flow, and a design focused on fast delivery.</p>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" style="grid-column: 1 / -1;">
+        <div class="cell-head"><span>In [5]:</span><span class="out">Out[5]: conversational AI</span></div>
+        <div class="proj-body">
+          <h3>Intelligent AI Chatbot</h3>
+          <p>A conversational AI assistant designed and deployed on IBM Watson Assistant, with structured dialogue flows and fallback logic for handling dynamic customer queries.</p>
+          <div class="proj-tags"><span>IBM Watson</span><span>AI Chatbot</span><span>Conversational AI</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="eyebrow">certifications</div>
+    <h2 class="section-title reveal">Credentials</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon">OC</div>
+        <div><h3>Oracle Certified Foundations Associate</h3><p>Artificial Intelligence &amp; Oracle Cloud Infrastructure</p></div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">OC</div>
+        <div><h3>Oracle Certified Foundations Associate</h3><p>Artificial Intelligence &amp; Oracle Cloud Infrastructure</p></div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">GA</div>
+        <div><h3>Data Analytics with Generative AI</h3><p>Professional Competency Certification</p></div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">JV</div>
+        <div><h3>Java Training Certification</h3><p>EduPyramids, SINE IIT Bombay — Score: 80%</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="mono-tag">SELECT * FROM opportunities WHERE fit = true;</div>
+      <h2>Let's build something with data.</h2>
+      <p>Open to internships and collaborations across analytics and web development. Reach out — I reply fast.</p>
+      <div class="contact-links">
+        <a href="mailto:atulkumr9212@gmail.com">✉ Email</a>
+        <a href="https://www.linkedin.com/in/atul-k-a51131343" target="_blank" rel="noopener">in LinkedIn</a>
+        <a href="https://github.com/atul9912" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Atul Kumar — built with pandas.DataFrame(life)</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
